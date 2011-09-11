@@ -10,7 +10,10 @@ Oh, and it assumes Scalarizr.
 
 ## ATTRIBUTES:
 
-- node['scalr']['configini'] The path to Scalr's config.ini.
+- node['scalr']['configini'] The path to Scalr's config.ini. Set to Scalr's default location.
+
+These attributes will be set by the default recipe. Values obtained from Scalr config.ini:
+
 - node['scalr']['snmp']['community_name'] The SNMP community name assigned by Scalr.
 - node['scalr']['snmp']['security_name'] The SNMP security name assigned by Scalr.
 - node['scalr']['general']['server_id'] Scalr's internal server id.
